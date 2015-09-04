@@ -1,0 +1,63 @@
+// https://github.com/guardian/guss-rem
+// USAGE
+// .test {
+//     @include rem((
+//         padding: 20px 0 0px 3vh,
+//         margin: 0 auto 20px,
+//         width: 300px,
+//         height: 350px,
+//         line-height: 20px
+//     ));
+//     height: rem(20px);
+// }
+
+// Outputs:
+
+// .test {
+//   padding: 20px 0 0px 3vh;
+//   padding: 2rem 0 0 3vh;
+//   margin: 0 auto 20px;
+//   margin: 0 auto 2rem;
+//   width: 300px;
+//   width: 30rem;
+//   height: 350px;
+//   height: 35rem;
+//   line-height: 20px;
+//   line-height: 2rem;
+//   height: 2rem;
+// }
+
+//
+// Default rem baseline.
+//
+// @type Number
+//
+$guss-rem-baseline: 16px !default;
+
+//
+// Transform a value into rem.
+//
+// @param {Number} $value
+// @param {Number} $baseline ($guss-rem-baseline)
+//
+// @requires {variable} guss-rem-baseline
+//
+// @return {List | Number}
+//
+@function rem($value, $baseline: $guss-rem-baseline) {
+    @if $value == 0 {
+        @return 0; // 0rem -> 0
+    }
+
+    @if type-of($value) == list {
+        $result: ();
+
+        @each $e in $value {
+            $result: append($result, rem($e, $baseline));
+        }
+
+        @return $result;
+    } @else {
+        @return if(type-of($value) == number and unit($value) == px, $value / $baseline * 1rem, $value);
+    }
+}

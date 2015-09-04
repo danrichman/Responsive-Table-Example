@@ -1,0 +1,51 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+
+$gray:                  #3a3a3a !default;
+$light-gray:            #f1f1f1 !default;
+$dark-gray:             #d5d5d5 !default;
+$off-white:             #f8f8f8 !default;
+$cobalt:                #2795d9 !default;
+$gray-blue:             #b6d2e4 !default;
+$light-blue:            #e3f1fa !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//** Global text color on `<body>`.
+$text-color:            $gray !default;
+$active-border-color:   $gray-blue !default;
+
+//** Global textual link color.
+$link-color:            $cobalt !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+
+//== Typography
+
+$font-family-base:  "Source Sans Pro", Helvetica, Arial, sans-serif !default;
+$font-size-base:          16px !default;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.1250em !default; /* 18px */
+$link-hover-decoration:   none !default;
+
+
+// //== Tables
+// //
+
+// //** Background color used for zebra stripes`.
+$table-bg-accent:           #f8f8f8 !default;
+
+
+//== Buttons
+
+$button-padding:            6px !default;

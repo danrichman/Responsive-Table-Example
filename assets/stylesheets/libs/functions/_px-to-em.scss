@@ -1,0 +1,24 @@
+// ------------------------------------------------------------
+// Functions for px to em conversions
+// ------------------------------------------------------------
+
+// Converts pixels to EMs
+// Usage: em(16) em(16px) em(16, 24) em(16px, 24px) em(16px, 1em)
+// https://gist.github.com/elundmark/7183510
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@function em($pixels, $context: 16) {
+  $base: 16;
+  $value: strip-units($pixels);
+  $value_unit: unit($pixels);
+  $c: strip-units($context);
+  $c_unit: unit($context);
+
+  @if $c_unit == "em" {
+    @return $value/($base/$c)+0em;
+  } @else {
+    @return $value/$c+0em;
+  }
+}

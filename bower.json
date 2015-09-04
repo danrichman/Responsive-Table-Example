@@ -1,0 +1,22 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/redguava/front-end-test",
+  "authors": [
+    "Dan Richman <dan@level39.com>"
+  ],
+  "description": "red guava front end test",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pleeease-cli": "~3.2.8",
+    "susy": "~2.2.5",
+    "breakpoint-sass": "~2.6.1"
+  }
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Responsive Tables Test</title>
+    <meta name="description" content="Cliniko Appointments">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ***** Dan Richman: Responsive Tables Test ****** -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7,respond@1.4"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+</head>
+<body style="zoom:1;">
+    <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+    <table class="appointments">
+        <caption class="sr-only">Recent appointments for Mr Patient</caption>
+        <thead>
+            <tr>
+                <th scope="col" aria-sort="descending">When</th>
+                <th scope="col" aria-sort="none">Where</th>
+                <th scope="col" aria-sort="none">Type</th>
+                <th scope="col" aria-sort="none">Practitioner</th>
+                <th scope="col" aria-sort="none">Changes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" data-label="When"><a href="#">Wed, <time datetime="2015-07-29 16:00">29 Jul 2015 4:00pm</time></a></th>
+                <td data-label="Where">Healthy Stuff (Melbourne)</td>
+                <td data-label="Type">Standard appointment</td>
+                <td data-label="Practitioner">Luke Arnold</td>
+                <td data-label="Changes">
+                    <button type="button" class="button button-log collapsed" data-toggle="collapse" data-target="#log1" aria-expanded="false" aria-controls="log1">View log</button>
+                    <div class="collapse" id="log1">
+                        <div class="wrap">
+                            <p><a href="#">Luke Arnold</a> created this appointment at
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.
+                                <br /> Appointment start changed from
+                                <time datetime="2015-07-29 10:45">29 Jul 2015, 10:45AM</time> to
+                                <time datetime="2015-07-29 16:00">29 Jul 2015, 4:00PM</time>.
+                                <br /> Appointment end changed from
+                                <time datetime="2015-07-29 11:15">29 Jul 2015, 11:15AM</time> to
+                                <time datetime="2015-07-29 16:30">29 Jul 2015, 4:30PM</time>.
+                                <br /> Practitioner changed from <a href="#">Genevieve Mayer</a> to <a href="#">Luke Arnold</a>.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time> to
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at 29 Jul 2015, 4:26PM.
+                                <br /> Patient arrived changed from No to Yes.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time> to
+                                <time datetime="2015-07-29 16:26">29 Jul 2015, 4:26PM</time>.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="When"><a href="#">Wed, <time datetime="2015-07-29 16:15">29 Jul 2015 4:15pm</time></a></th>
+                <td data-label="Where">Healthy Stuff (Melbourne)</td>
+                <td data-label="Type">Standard appointment</td>
+                <td data-label="Practitioner">Luke Arnold</td>
+                <td data-label="Changes">
+                    <button type="button" class="button button-log collapsed" data-toggle="collapse" data-target="#log2" aria-expanded="false" aria-controls="log2">View log</button>
+                    <div class="collapse" id="log2">
+                        <div class="wrap">
+                            <p><a href="#">Luke Arnold</a> created this appointment at
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.
+                                <br /> Appointment start changed from
+                                <time datetime="2015-07-29 10:45">29 Jul 2015, 10:45AM</time> to
+                                <time datetime="2015-07-29 16:00">29 Jul 2015, 4:00PM</time>.
+                                <br /> Appointment end changed from
+                                <time datetime="2015-07-29 11:15">29 Jul 2015, 11:15AM</time> to
+                                <time datetime="2015-07-29 16:30">29 Jul 2015, 4:30PM</time>.
+                                <br /> Practitioner changed from <a href="#">Genevieve Mayer</a> to <a href="#">Luke Arnold</a>.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time> to
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at 29 Jul 2015, 4:26PM.
+                                <br /> Patient arrived changed from No to Yes.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time> to
+                                <time datetime="2015-07-29 16:26">29 Jul 2015, 4:26PM</time>.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" data-label="When"><a href="#">Wed, <time datetime="2015-07-29 16:30">29 Jul 2015 4:30pm</time></a></th>
+                <td data-label="Where">Healthy Stuff (Melbourne)</td>
+                <td data-label="Type">Standard appointment</td>
+                <td data-label="Practitioner">Luke Arnold</td>
+                <td data-label="Changes">
+                    <button type="button" class="button button-log collapsed" data-toggle="collapse" data-target="#log3" aria-expanded="false" aria-controls="log3">View log</button>
+                    <div class="collapse" id="log3">
+                        <div class="wrap">
+                            <p><a href="#">Luke Arnold</a> created this appointment at
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.
+                                <br /> Appointment start changed from
+                                <time datetime="2015-07-29 10:45">29 Jul 2015, 10:45AM</time> to
+                                <time datetime="2015-07-29 16:00">29 Jul 2015, 4:00PM</time>.
+                                <br /> Appointment end changed from
+                                <time datetime="2015-07-29 11:15">29 Jul 2015, 11:15AM</time> to
+                                <time datetime="2015-07-29 16:30">29 Jul 2015, 4:30PM</time>.
+                                <br /> Practitioner changed from <a href="#">Genevieve Mayer</a> to <a href="#">Luke Arnold</a>.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:21">29 Jul 2015, 4:21PM</time> to
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time>.</p>
+                            <p><a href="#">Luke Arnold</a> updated this appointment at 29 Jul 2015, 4:26PM.
+                                <br /> Patient arrived changed from No to Yes.
+                                <br /> Updated at changed from
+                                <time datetime="2015-07-29 16:23">29 Jul 2015, 4:23PM</time> to
+                                <time datetime="2015-07-29 16:26">29 Jul 2015, 4:26PM</time>.</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="dist/js/main.js"></script>
+</body>
+</html>
